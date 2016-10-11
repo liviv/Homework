@@ -10,14 +10,12 @@ public static void main (String []args ){
 	 int num = slave.nextInt();
 	 if (num <=0)
 	 { System.out.print("Error");}
-	 else if (num >100)  { System.out.print( num + "- ıòî ãğèâíà!");}
-	 else if (num == 1 | num == 21| num == 31| num == 41|num == 51|num == 61|num == 71|
-			 num == 81|num == 91)
-	 { System.out.print( num + " êîïåéêà");}
-	 else if (num >=2 & num <=4| num >= 22 & num <= 24| num >=32 & num <= 34|num >= 42 & num <=44|num >=52 & num<=54|num >=62 & num <=64|
-			 num >=72 & num <=74|num >= 82 & num <=84|num >= 92 &  num <=94)
-	 { System.out.print( num + " êîïåéêè");}
-	 else { System.out.print( num + " êîïååê");}
+	 else if (num >100)  { System.out.print( num + "- Ã½Ã²Ã® Ã£Ã°Ã¨Ã¢Ã­Ã !");}
+	 else if (num%10 == 1)
+	 { System.out.print( num + " ÃªÃ®Ã¯Ã¥Ã©ÃªÃ ");}
+	 else if (num %10==2 || num %10==4  >=2)
+	 { System.out.print( num + " ÃªÃ®Ã¯Ã¥Ã©ÃªÃ¨");}
+	 else { System.out.print( num + " ÃªÃ®Ã¯Ã¥Ã¥Ãª");}
 	 //if (num >=5 & num <=20| num >= 25 & num <= 30| num >=35 & num <= 40|num >= 44 & num <=50|num >=55 & num<=60|num >=65 & num <=70|
 		//	 num >=75 & num <=80|num >= 85 & num <=90|num >= 95 &  num <=100)
 	 
