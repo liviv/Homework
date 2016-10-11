@@ -1,0 +1,31 @@
+public class Week1_part2_task2 {
+    /**
+     * Created by Victoria on 10/11/2016.
+     *  Ввести с клавиатуры три числа, положительные возвести в куб, а отрица-
+     тельные заменить на 0.*/
+    public static class Week1_part2_task2 {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner (System.in);
+            System.out.println("Insert first number");
+            int number1 = sc.nextInt();
+            int number2 = sc.nextInt();
+            int number3 = sc.nextInt();
+
+
+            if (number1 > 0 )
+            {number1 = number1 *number1 * number1;}
+            else {number1 = 0;}
+
+            if (number2 > 0 )
+            {number2 = number2 *number2 * number2;}
+            else {number2 = 0;}
+
+            if (number3 > 0 )
+            {number3 = number3 *number3 * number3;}
+            else {number3 = 0;}
+            System.out.println ("result 1 " + number1 );
+            System.out.println ("result 2 " + number2 );
+            System.out.println ("result 3 " + number3 );
+        }
+    }
+}
