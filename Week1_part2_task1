@@ -1,0 +1,44 @@
+package Week1_part2;
+
+import java.util.Scanner;
+
+/**
+ * Created by Victoria on 10/11/2016.
+ * Ввести с клавиатуры значения трех сторон треугольника a, b и c и опреде-
+ * лить, является ли он прямоугольным. Ответ вывести в виде сообщения.
+ */
+public class Week1_part2_task1 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Incert first value");
+        int a = sc.nextInt();
+        System.out.println("Incert second value");
+        int b = sc.nextInt();
+        System.out.println("Incert third value");
+        int c = sc.nextInt();
+
+        if (a > b && a > c) {
+
+            if (b * b + c * c == a * a)
+                System.out.println("triangle has 90C angle");
+            else {
+                System.out.println("triangle does NOT have 90C angle");
+            }
+        } else if (b > a && b > c) {
+            if (a * a + c * c == b * b)
+                System.out.println("triangle has 90C angle");
+            else {
+                System.out.println("triangle does NOT have 90C angle");
+            }
+        } else if (c > a && c > b) {
+            if (a * a + b * b == c * c)
+                System.out.println("triangle has 90C angle");
+            else {
+                System.out.println("triangle does NOT have 90C angle");
+            }
+        } else {
+            System.out.println("try again");
+        }
+    }
+}
