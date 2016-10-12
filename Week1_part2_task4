@@ -1,0 +1,38 @@
+package Week_1;
+
+import java.util.Scanner;
+
+//Известны две скорости, одна в километрах в час, другая в метрах в секун-
+//ду. Какая из них больше
+// WHY SHOUR CAN BE NEGATIVE????????????????
+
+public class Week1_part2_task4 {
+
+	public static void main(String[] args) {
+		for (;;) {
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Insert speed in KM per hour");
+			int shour = sc.nextInt();
+			System.out.println("Insert speed in KM per minute");
+			int sminute = sc.nextInt();
+			int sminute2 = sminute * 60;
+			if (sminute > 0 && shour > 0 ) {
+
+				if (sminute2 > shour) {
+					System.out.println("Speed in KM per minute is LARGER then peed in KM per hour ");
+				} else if (sminute2 < shour) {
+					System.out.println("Speed in KM per minute  is SMALLER then speed in KM per hour ");
+				} else {
+					{
+						System.out.println("equals");
+					}
+				}
+
+			} else {
+				{
+					System.out.println("insert correct value\n");
+				}
+			}
+		}
+	}
+}
