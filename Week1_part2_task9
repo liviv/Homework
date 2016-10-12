@@ -1,0 +1,25 @@
+/*9) Написать программу вычисления идеального веса пользователя (рост-
+100). Выдать рекомендации о необходимости поправиться либо поху-
+деть.*/
+package Week_1;
+
+import java.util.Scanner;
+
+public class Week1_part2_task9 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("What is your high?");
+		for (;;) {
+			int high = sc.nextInt();
+			if (high > 100) {
+				int weight = high - 100;
+				System.out.println("Your ideal weight is " + weight + " kilograms");
+
+			} else {
+				System.out.println("insert a correct value");
+			}
+		}
+	}
+}
