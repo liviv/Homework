@@ -1,0 +1,24 @@
+package Week_1;
+
+import java.util.Scanner;
+
+//Даны три числа a, b, c. Определить, имеется ли среди них хотя бы одна
+//пара равных
+public class Week1_part2_task5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Insert the first number");
+		int num1 = sc.nextInt();
+		System.out.println("Insert the second number");
+		int num2 = sc.nextInt();
+		System.out.println("Insert the third number");
+		int num3 = sc.nextInt();
+		
+		if (num1==num2||num1==num3||num2==num3){System.out.println("Congrats, you have equal numbers");}
+		else {System.out.println("You do not have equal numbers");}
+		
+		
+	}
+
+}
