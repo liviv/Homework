@@ -1,0 +1,36 @@
+package Week_1;
+import java.util.Scanner;
+/*10) Написать программу вычисления стоимости переговоров, если по суббо- 
+30 там и воскресеньям предоставляется 20% скидка. Ввести продолжитель- 
+31 ность разговора и день недели (цифра от 1 до 7).*/
+
+public class Week1Part2Task10 {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner (System.in);
+	System.out.println ("insert conversation duration (minutes)");
+	int duration = sc.nextInt();
+	System.out.println ("insert day of the week (1 - 7)");
+	int day = sc.nextInt();
+	int rate = 4;
+	double price;// UAH/minute
+	if (duration <1){
+		System.out.println ("duration can not be less than one minute");
+		return;
+		}
+	if (day <1 && day >7){
+		System.out.println ("day must be from 1 to 7!! ");
+		return;
+		}
+	if (day >=1 && day <=5){
+		price  = rate* duration;
+		System.out.println ("you will pay" + price);
+	}
+	
+	if (day >=6 && day <=7){
+		price  = (rate*0.8)* duration;
+		System.out.println ("you will pay " + price);
+	}
+	}
+
+}
